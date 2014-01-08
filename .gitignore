@@ -1,18 +1,17 @@
-# Object files
-*.o
-*.ko
 
-# Libraries
-*.lib
-*.a
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
+void sideways(int n)
+{
+    int x,y;
+    for (y= 0; y < n; y++)
+    {
+        for (x= 0; x <= y; x++)
+            putchar('*');
+        putchar('\n');
+    }
+    for (y= n-1; y > 0; y--)
+    {
+        for (x= 0; x < y; x++)
+            putchar('*');
+        putchar('\n');
+    }
+}
